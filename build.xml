@@ -17,8 +17,8 @@
 
     <!-- Create the JAR file with dependencies -->
     <target name="jar" depends="compile">
-        <mkdir dir="${dist.dir}"/>
-        <jar destfile="${dist.dir}/MyProject.jar" basedir="${build.dir}">
+        <mkdir dir=""/>
+        <jar destfile="MyProject.jar" basedir="${build.dir}">
             <!-- Specify the main class in the manifest directly -->
             <manifest>
                 <attribute name="Main-Class" value="main.moo.Moo"/>
